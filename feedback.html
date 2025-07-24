@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/feedback.css">
+    <title>Аренда автомобилей</title>
+</head>
+<body>
+    <header>
+        <img src="img/free-icon-luxury-car-18042076.png" alt="" id="icon">
+        <h1>Аренда автомобилей</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="rent.html">Взять в аренду</a></li>
+                <li><a href="feedback.html">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form">
+            <h1 style="color:rgb(45, 81, 187);">Будем рады Вашей обратной связи!</h1>
+            <form name="form1" method="get"> 
+                <label> Имя:</label> 
+                <input type="text" name="surname" placeholder="Введите имя">
+                <label> Ваш email:</label>
+                <input  type="text" name="email" placeholder="Введите почту">
+                <label> Сообщение</label>
+                <textarea name="message" placeholder="Введите сообщение"></textarea>
+                <input type="submit" name="send" value="Отправить" id="button" onclick=" alert('Спасибо за ваше сообщение!');">
+            </form> 
+        </div>
+    </main>
+    <div class='msg-34'>
+    <h2 >Отзывы наших клиентов:</h2>
+    <!-- <section><?
+	$link = mysqli_connect("localhost", "root", "");
+	mysqli_select_db($link, "praktika");
+
+
+	$sql="SELECT name, email, msg FROM feedback ORDER BY id DESC";
+	$result=mysqli_query($link, $sql);
+
+	while ($line=mysqli_fetch_row($result)) {
+        echo "<section class='section-msg'><b>Имя: </b>".$line[0]."<br>";
+        echo "<b>Email: </b>".$line[1]."<br>";
+        echo "<b>Сообщение: </b>".$line[2]."</section><br><br>";
+	}
+?></section> -->
+</div>
+
+</body>
+</html>

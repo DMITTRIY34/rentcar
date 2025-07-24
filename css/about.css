@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Основная структура */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% высоты viewport */
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(156, 156, 156);
+}
+
+main {
+    flex: 1; /* Занимает всё доступное пространство */
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(85, 85, 85);
+    color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Прижимаем к низу */
+}
+.text-color {
+    width: 90%;
+    max-width: 800px;
+    margin: 15px auto;
+    padding: 15px;
+}
+/* Убираем горизонтальный скролл */
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Для всех страниц */
+header, main, footer, section {
+    box-sizing: border-box; /* Учитываем padding в ширине */
+}
+
+/* Исправляем проблему с inline-block элементами */
+section {
+    display: block; /* вместо inline-block */
+    width: 100%;
+    max-width: 100%;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(156, 156, 156);
+    overflow-x: hidden; /* Добавляем чтобы не было горизонтального скролла */
+    padding-bottom: 100px; /* Для footer */
+    position: relative;
+
+}
+header{
+    display: flex;
+    background-color:rgb(85, 85, 85) ;
+    border-radius: 15px;
+}
+#icon{
+    width: 80px; 
+    height: 80px; 
+    margin-right: 20px;
+    margin-left: 20px; 
+}
+header h1{
+    margin-right: 300px;
+}
+nav{
+    display: inline-block;
+}
+.navigation{
+    display: flex;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin-top: 12px;
+    margin-right: 25px;
+    font-size: 20px;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color:rgb(59, 152, 233);
+}
+a:visited{
+    text-decoration: none;
+}
+main{
+    margin-top: 10px;
+    width: 100%;
+    height: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer{
+    background-color:rgb(85, 85, 85);
+    padding: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    color: #f0f0f0;
+}
+
+.text-color{
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.mission {
+    background: #f0f0f0;
+    padding: 30px;
+    border-radius: 8px;
+    /*margin: 40px 0; */
+    text-align: center;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background: #222;
+    color: white;
+    border-radius: 8px;
+}
+
+.contact-info a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.highlight {
+    color: #d4af37;
+    font-weight: bold;
+}
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    /* Шапка */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+    
+    #icon {
+        margin: 0 0 15px 0;
+        width: 60px;
+        height: 60px;
+    }
+    
+    header h1 {
+        margin: 0 0 15px 0;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .navigation li {
+        margin: 8px 0;
+        font-size: 1rem;
+    }
+    
+    /* Основное содержимое */
+    main {
+        height: auto;
+        padding: 20px 15px;
+        flex-direction: column;
+    }
+    
+    section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .text-color {
+        padding: 15px;
+        margin: 10px 0;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    /* Подвал */
+    footer {
+        position: relative;
+        height: auto;
+        padding: 15px 0;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    footer p {
+        margin: 5px 0;
+        font-size: 0.8rem;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.3rem;
+    }
+    
+    .text-color {
+        padding: 12px;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    .highlight {
+        font-size: 0.9rem;
+    }
+}

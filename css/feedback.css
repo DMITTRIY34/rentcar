@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Основная структура */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% высоты viewport */
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(156, 156, 156);
+}
+
+main {
+    flex: 1; /* Занимает всё доступное пространство */
+    padding: 20px;
+}
+.form {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.msg-34 {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+footer {
+    background-color: rgb(85, 85, 85);
+    color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Прижимаем к низу */
+}
+/* Основные стили */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(156, 156, 156);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 120px; /* Для footer */
+}
+/* В feedback.css */
+.form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    color: black;
+}
+
+input, textarea {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+header{
+    display: flex;
+    background-color:rgb(85, 85, 85) ;
+    border-radius: 15px;
+}
+#icon{
+    width: 80px; 
+    height: 80px; 
+    margin-right: 20px;
+    margin-left: 20px; 
+}
+header h1{
+    margin-right: 300px;
+}
+nav{
+    display: inline-block;
+}
+.navigation{
+    display: flex;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin-top: 12px;
+    margin-right: 25px;
+    font-size: 20px;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color:rgb(59, 152, 233);
+}
+a:visited{
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#button {
+    background-color: rgb(45, 81, 187);
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#button:hover {
+    background-color: rgb(39, 70, 160);
+}
+
+.msg-34 {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.msg-34 h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.section-msg {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: rgb(85, 85, 85);
+    padding: 20px;
+    text-align: center;
+    color: #f0f0f0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #icon {
+        margin: 0 auto 15px;
+    }
+    
+    header h1 {
+        margin: 0 auto 15px;
+        width: 100%;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    label {
+        font-size: 1rem;
+    }
+    
+    input, textarea, #button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+    .form {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.3rem;
+    }
+    
+    .msg-34 h2 {
+        font-size: 1.2rem;
+    }
+    
+    footer p {
+        font-size: 0.8rem;
+    }
+}
